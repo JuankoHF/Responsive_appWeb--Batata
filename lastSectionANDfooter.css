@@ -1,0 +1,176 @@
+:root {
+    /*colores*/
+    --bitcoin_orange: #f7931a;
+    --soft_orange: #FFE9D5;
+    --secoundary_blue: #1A9AF7;
+    --soft_blue: #E7F5FF;
+    --warm_black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+    --off_white: #FAF8F7;
+    --just_white: #FFFFFF; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding-bottom: 70px;
+}
+.planes_title {
+    width: 90%;
+    min-width: 288px;
+    margin: 0 auto;
+    margin-top: 64px;
+    text-align: center;
+}
+.planes_title h2 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.6rem;
+    color: var(--warm_black);
+    margin-bottom: 24px; 
+}
+.planes_title p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 18px;
+    color: #757575;
+    margin-bottom: 50px;
+}
+.plans-continer--slaider { /*slaider, scroll sin overflow*/
+    display: flex;
+    height: 330px;
+    align-items: center;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+}
+.slider_arrow {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+#before {
+    left: 3px;
+}
+#after {
+    right: 3px;
+}
+.plans-continer--cards {
+    position: relative;
+    scroll-snap-align: center;  /*parte del slaider*/
+    width: 190px;
+    max-width: 300px;
+    height: 247px;
+    margin: 0 15px;
+    padding: 0 15px;
+    background-color: var(--just_white);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.plans-continer--cards .recommended {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    padding: 8px;
+    background-color: var(--bitcoin_orange);
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-family: "Inter" , sans-serif;
+    color: var(--just_white);
+    left: calc(50% - 50px);
+    top: -15px;
+}
+.plans-continer--cards .inBlue {
+    background-color: var(--secoundary_blue);
+}
+.plan-info-container h3 {
+   padding-top: 30px; 
+   font-size: 1.4rem;
+   font-weight: 500;
+   line-height: 1.8rem;
+   color: #000000;
+   margin-bottom: 8px;
+}
+.plan-info-container img{
+    width: 77px;
+    height: 56px;
+    margin-bottom: 16px;
+}
+.plan-info-container .plan-card-saving {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #757575;
+    margin-bottom: 16px;
+}
+.plan-card--ca {
+   width: 150px;
+   height: 48px;
+   background-color: var(--off_white);
+   color: var(--warm_black); 
+   font-size: 1.4rem;
+   font-weight: 700;
+   line-height: 1.8rem;
+   border: solid 2px var(--bitcoin_orange);
+   border-radius: 8px;
+   
+}
+.plan-card--ca span {
+    display: inline-block;
+    background-image: url(./assests/icons/arrow-right.svg);
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    vertical-align: text-bottom;
+}
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin_orange);
+}
+footer section {
+   display: flex;
+   width: 50%;
+   height: auto;
+   align-items: center;
+   justify-content: center; 
+}
+.left ul {
+    list-style: none;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    
+}
+.left ul li{
+    margin: 8px 0;
+}
+.left ul li a {
+    text-decoration: none;
+    color: var(--just_white);
+}
+.rigdt {
+    width: 50%;
+    display: block;
+    margin: auto; 
+}
+.rigdt img {
+    width: 50px;
+    height: 50px;
+    margin-left: calc(50% - 30px);
+}
+.rigdt p {
+   font-size: 0.8rem;
+   line-height: 1.8rem; 
+   color: var(--soft_orange); 
+   margin-left: calc(50% - 40px);
+}

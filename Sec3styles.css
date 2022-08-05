@@ -1,0 +1,131 @@
+:root {
+    /*colores*/
+    --bitcoin_orange: #f7931a;
+    --soft_orange: #FFE9D5;
+    --secoundary_blue: #1A9AF7;
+    --soft_blue: #E7F5FF;
+    --warm_black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+    --off_white: #FAF8F7;
+    --just_white: #FFFFFF; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.main-description-continer {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 15px;
+    background-color: var(--warm_black);
+}
+.main-description-continer .small-potato {
+    position: absolute;
+    width: 45px;
+    height: 25px;
+    top: -12px;
+    left: calc(50% - 20px);
+}
+.section-title {
+    width: 95%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.section-title h2 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    font-weight: 700;
+    color: var(--just_white);
+}
+.section-title p {
+    color: #808080;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin: 25px 0;
+}
+.cards--container {
+    width: 100%;
+    height: auto;  
+}
+.cards--container h4 {
+   font-size: 1.8rem;
+   line-height: 1.8rem;
+   font-weight: 700;
+   color: var(--just_white); 
+   text-align: left;
+   margin-bottom: 10px;
+   margin-top: 34px;
+}
+.cards--container p {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    color: #808080
+}
+.all-cards {
+    position: relative;
+    width: 98%;
+    height: 152px;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    padding: 15px 8px;
+    border-radius: 8px;
+    background-color: rgba(108, 105, 105, 0.16);
+    /*sombra*/
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.16);
+}
+.all-cards .clock {
+    position: absolute;
+    background: url(./assests/icons/clock.svg);
+    width: 24px;
+    height: 24px;
+    top: 14px;
+    left: 16px;
+}
+.all-cards .eye {
+    position: absolute;
+    background: url(./assests/icons/eye.svg);
+    width: 24px;
+    height: 24px;
+    top: 14px;
+    left: 16px;
+}
+.all-cards .dollar {
+    position: absolute;
+    background: url(./assests/icons/dollar-sign.svg);
+    width: 24px;
+    height: 24px;
+    top: 14px;
+    left: 16px;
+}
+.all-cards .check {
+    position: absolute;
+    background: url(./assests/icons/check-circle.svg);
+    width: 24px;
+    height: 24px;
+    top: 14px;
+    left: 16px;
+}
+.bitcoingirl {
+    width: 100%;
+    height: 387px;
+    background-image: url(./assests/imgs/bitcoinbaby.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bitcoingirl h2 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: var(--just_white);
+    padding-top: 64px;
+}

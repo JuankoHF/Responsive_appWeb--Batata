@@ -1,0 +1,238 @@
+
+:root {
+    /*colores*/
+    --bitcoin_orange: #f7931a;
+    --soft_orange: #FFE9D5;
+    --secoundary_blue: #1A9AF7;
+    --soft_blue: #E7F5FF;
+    --warm_black: #201E1C;
+    --black: #282623;
+    --grey: #BABABA;
+    --off_white: #FAF8F7;
+    --just_white: #FFFFFF; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif; /*la mayor parte de los textos
+    tiene esta fuente, asi si hubiese otra fuente se modifica solo una */
+}
+
+/* 1. posicionamiento */
+
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 320px;
+    height: 334px;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    /*background cogido de figma*/
+}
+header img {
+    width: 150px;
+    height: 24px;
+    margin-top: 60px;
+    align-self: center; /* con display flex*/
+}
+.header--container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+.header--container .header--button {
+    position: absolute;
+    top: 270px;
+    left: calc(50% - 116px);
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--off_white);
+    border-radius: 4px;
+    /*sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.header--button span { 
+    display: inline-block;
+    width: 1.2rem;
+    height: 0.74rem;
+    top: 8.59px;
+    left: 6px;
+    margin-left: 10px;
+    background-image: url(./assests/icons/Vector.svg);
+}
+
+/*3tipografias*/
+
+.header--container h1 {
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: bold; /*ancho de la fuente*/
+    line-height: 2.6rem; /*espacio entre lineas*/
+    color: var(--just_white);
+}
+.header--container p {
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft_orange);
+    margin-top: 2.5rem;
+}
+main {
+    width: 100%;
+    height: auto;
+    background-color: #ececef;
+}
+ /* main - section 1*/
+.main-exchange-continer {
+    width: 100%;
+    height: auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.backgroundImg {
+    width: 195px;
+    height: 195px;
+    background-image: url(./assests/imgs/bitcoin.svg);
+    margin: 0 auto; /*para que se mantenga centrado simpre*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /*no repite si aumenta el with*/
+    margin-bottom: 50px;
+}
+.continer-title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto; /*para que se mantenga centrado simpre*/
+}
+.continer-title h2 {
+    font-size: 2.4rem;
+    font-style: bold;
+    color: var(--black);
+    margin-bottom: 30px;
+    line-height: 2.6rem;
+}
+.continer-title p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500; /*menos que bold*/
+    line-height: 1.8rem;
+    color: #757575;
+}
+     /* main - section 2*/
+    
+.main-currency-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+.currency-table--title {
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #FF9536;
+    line-height: 2.3rem; 
+    margin-bottom: 12px;
+    justify-content: left; 
+    margin-left: calc(36% - 55px);
+
+}
+.currency-table--continer {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.currency-table--continer table {
+    width: 100%;
+    height: 100%;
+   
+}
+.currency-table--continer td {
+    width: 50%;  /*divide la tabla en dos columnas iguales*/
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+    color: var(--grey);
+    background-color: var(--just_white);
+}
+.currency-table--continer .table__top-left {
+    border-radius: 15px 0 0 0 ;
+}
+.currency-table--continer .table__top-right {
+    border-radius: 0 15px 0 0;
+}
+.currency-table--continer .table__bottom-left {
+    border-radius: 0  0 0 15px;
+}
+.currency-table--continer .table__bottom-right {
+    border-radius: 0 0 15px 0;
+}
+.currency-table--continer .table__right {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    color: #757575;
+    font-weight: normal;
+}
+.currency-table--continer .down {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-left: 10px;
+    background-image: url("./assests/icons/trending-down.svg");
+   /* background-size: cover; /*la imagen se renderiza preservando la proprcion*/
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.currency-table--continer .height {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-left: 10px;
+    background-image: url("./assests/icons/trending-up.svg");
+   /* background-size: cover; la imagen se renderiza preservando la proprcion*/
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+.currency-table--date {
+    width: 200px;
+    height: 31px;
+    margin: 0 auto;
+    padding: 8px;
+    margin-top: 16px;
+    background-color: var(--soft_orange);
+    border-radius: 8px;
+    text-align: center;
+}
+.currency-table--date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm_black);
+}
+
